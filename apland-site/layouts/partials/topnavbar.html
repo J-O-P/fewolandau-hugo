@@ -1,58 +1,36 @@
-<nav>
-    <div class="container nav-wrapper">
-
-        <!-- Top Navbar with dropdown -->
-        <a href="/" class="brand-logo left">
-            <img src="/icons/menuicon_64_apland.png" alt="Apland" height="30px;" style="vertical-align: middle;">
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li><a class="dropdown-trigger" href="/apt/" data-target="dropdownWohnung">
-                    Die Wohnung
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-            </li>
-            <li><a class="dropdown-trigger" href="#" data-target="dropdownLage">
-                    Lage
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-            </li>
-            <li><a class="dropdown-trigger" href="#" data-target="dropdownPreis">
-                    Preis & Verfügbarkeit
-                    <i class="material-icons right">arrow_drop_down</i>
-                </a>
-            </li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#" class="waves-effect waves-light btn">Online Buchung</a></li>
-        </ul>
-        <a href="#" data-target="mobile-nav" class="sidenav-trigger right"><i
-                class="material-icons black-text">menu</i></a>
-
-        <ul id="dropdownWohnung" class="dropdown-content">
-            <li><a href="#!">Ausstattung</a></li>
-            <li><a href="#!">Bilder</a></li>
-            <li><a href="#!">Grundriss</a></li>
-        </ul>
-        <ul id="dropdownLage" class="dropdown-content">
-            <li><a href="#!">Anreise</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Landau</a></li>
-            <li><a href="#!">Freizeitideen</a></li>
-        </ul>
-        <ul id="dropdownPreis" class="dropdown-content">
-            <li><a href="#!">Preis</a></li>
-            <li><a href="#!">Verfügbarkeit</a></li>
-            <li><a href="#!">Konditionen</a></li>
-        </ul>
-
-        <!-- SideNav replicates same structures on top level -->
-        <ul class="sidenav" id="mobile-nav">
-            <li><a href="home_de.html">Home</a></li>
-            <li><a href="apt_de.html">Die Wohnung</a></li>
-            <li><a href="#">Lage</a></li>
-            <li><a href="#">Preis & Verfübarkeit</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#" class="waves-effect waves-light btn">Online Buchung</a></li>
-        </ul>
-
-    </div>
+<nav class="z-depth-0">
+  <div class="container nav-wrapper">
+    <a href="/" class="brand-logo left">
+      <img
+        src="/icons/menuicon_64_apland.png"
+        alt="Apland"
+        height="40px;"
+        style="vertical-align: middle"
+      />
+    </a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+        <i class="material-icons black-text">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      {{ range site.Menus.main }}
+      <li>
+        <li><b><a href="{{ .URL }}">{{.Name}}</a></b></li>
+    </li>
+    {{ end }}
+      <li>
+        <a href="#" class="waves-effect waves-light btn">Online Buchung</a>
+    </li>
+    </ul>
+  </div>
 </nav>
+
+<ul class="sidenav" id="mobile-demo">
+{{ range site.Menus.main }}
+<li>
+  <li><b><a href="{{ .URL }}">{{.Name}}</a></b></li>
+</li>
+{{ end }}
+<li>
+    <a href="#" class="waves-effect waves-light btn">Online Buchung</a>
+</li>
+</ul>
