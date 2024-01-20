@@ -2,3 +2,17 @@ baseURL: https://example.org/
 languageCode: en-us
 title: FeWo Appland plain Hugo site
 pluralizelisttitles: false
+menus:
+  main:
+    - name: Wohnung
+      pageRef: /apt
+      weight: 20
+    - name: Lage
+      pageRef: /location
+      weight: 30
+    - name: Preis & Verfügbarkeit
+      pageRef: /book
+      weight: 40
+    - name: Kontakt
+      pageRef: /contact
+      weight: 50
