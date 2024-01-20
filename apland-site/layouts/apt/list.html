@@ -1,161 +1,39 @@
 {{ define "page" }}
 
 <br>
+
 <div style="background-color: #E9E6E1;">
     <br>
     <div class="container">
         <h4>Ausstattung Ferienwohnung Apland</h4>
         <div class="row">
 
-        {{ range .Pages }}
+            {{ range .Pages.ByParam "sortrank" }}
 
-        <div class="col s12 m6">
-            <div class="card large">
-                <div class="card-image">
-                    <img src={{ .Params.imgurl }}>
-                    <span class="card-title">{{ .Title }}</span>
-                </div>
-                <div class="card-content">
-                    <p> {{ .Content }}
-                    </p>
-                </div>
-                <!-- <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div> -->
-            </div>
-        </div>
-
-        {{ end }}
-
-        </div>
-        <div>
-<br>
-<div style="background-color: #E9E6E1;">
-    <br>
-    <div class="container">
-        <h4>ALT Ferienwohnung Apland</h4>
-        <div class="row">
-
-            <div class="col s12 m6">
-                <div class="card large">
-                    <div class="card-image">
-                        <img src="/img/apt/card_offenerBereich.JPG">
-                        <span class="card-title">Offener Wohn-/Essbereich</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Moderne Holzmöbel, kombiniert mit Ledersofa und Récamiere bieten ein modernes und doch
-                            behagliches Wohngefühl. Esstisch mit Sitzgelegenheit für 4 Personen und bei Bedarf
-                            zusätzlich 2 Kinderstühlen. Das Ledersofa bietet eine weitere Schlafgelegenheit für
-                            maximal zwei Personen (1 Erwachsener, 2 Kinder).
-                        </p>
-                    </div>
-                    <!-- <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div> -->
-                </div>
-            </div>
-
-            <div class="col s12 m6">
-                <div class="card large">
-                    <div class="card-image">
-                        <img src="/img/apt/210 Küche.JPG">
-                        <span class="card-title">Küche</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Moderne Einbauküche, komplett ausgestattet mit:
-                        </p>
-                        <ul>
-                            <li>- Spülmaschine</li>
-                            <li>- 2 Platten Glaskeramik-Kochfeld</li>
-                            <li>- Kühlschrank mit Gefrierfach, sowie Toaster und Mikrowelle</li>
-                            <li>- Senseo-Kaffeemaschine und Wasserkocher (incl. Teebeuteln)</li>
-                            <li>- Reinigungsutensilien (Lappen, Spülmittel, Müllbeutel)</li>
-                        </ul>
+                <div class="col s12 m6">
+                    <div class="card large">
+                        <div class="card-image">
+                            <img src={{ .Params.imgurl }}>
+                            <span class="card-title">{{ .Title }}</span>
+                        </div>
+                        <div class="card-content">
+                            <p> {{ .Content }}
+                            </p>
+                        </div>
+                        <!-- <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div> -->
                     </div>
                 </div>
 
-            </div>
-
-            <div class="col s12 m6">
-                <div class="card large">
-                    <div class="card-image">
-                        <img src="/img/apt/card_tv.jpg">
-                        <span class="card-title">TV, HiFi und WLAN</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Ein LED-SmartTV mit Satellitenempfang und eine HiFi Anlage mit CD-Player und
-                            Internet-Radio sind in der Wohnung vorhanden.
-                            <br><br>
-                            Gratis Internetzugang per WLAN. Zugangsdaten dazu befinden sich in Informations-Mappe
-                            inder Wohnung.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6">
-                <div class="card large">
-                    <div class="card-image">
-                        <img src="/img/apt/503 Schlazfzimmer.JPG">
-                        <span class="card-title">Schlafzimmer</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Schlafzimmer mit 160 cm x 200 cm Doppelbett.
-                            <br>
-                            Das Bett ist leicht höher für den bequemen
-                            Einstieg, zudem können Sie unter dem Bett auch ihre Koffer und Taschen verstauen.
-                            Dazu
-                            ein grosser Kleiderschrank. Die Rollläden an den Fenstern sorgen für eine erholsame
-                            Nachtruhe. Natürlich ausgestattet mit Allergiker-Bettdecken und -Kissen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6">
-                <div class="card large">
-                    <div class="card-image">
-                        <img src="/img/apt/602 Bad s.jpg">
-                        <span class="card-title">Modernes Badezimme mit Dusche</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Badezimmer mit viel Ablagefläche, flauschigen Handtüchern, erhöhtes WC, Kosmetikspiegel,
-                            Fön, Handseife, Hocker für Kinder. Durch die Fussbodenheizung in jeder Jahreszeit sehr
-                            angenehm.
-                            <br>
-                            Dazu eine flache, (fast) ebenerdige, leicht zugängliche Dusche.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col s12 m6">
-                <div class="card large">
-                    <div class="card-image">
-                        <img src="/img/apt/card_wama.jpg">
-                        <span class="card-title">Waschmaschine</span>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Im Bad in der Wohnung steht Ihnen eine Waschmaschine zur exclusiven Verfügung.
-                            Wir bitten, für die Nutzung der Waschmaschine einen Unkostenbeitrag von 4 EUR pro
-                            Waschgang zu hinterlassen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
+            {{ end }}
         </div>
     </div>
 </div>
 
 <br>
+
+
 
 <div style="background-color: #E9E6E1;">
     <div class="container">
@@ -167,15 +45,20 @@
 
     </div>
 </div>
-
 <br>
+
 <div style="background-color: #E9E6E1;">
-    <br>
     <div class="container">
+        <br>
         <h4>Grundriss</h4>
+        <p><i>Klick zum Vergrössern</i></p>
+
+        {{ partial "image-gallery" (dict "context" . "gallery_dir" "album-grundriss" ) }}
 
     </div>
 </div>
+
+
 
 
 {{ end }}
