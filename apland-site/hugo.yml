@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://www.fewolandau.de/
 languageCode: en-us
 title: FeWo Appland plain Hugo site
 pluralizelisttitles: false
@@ -16,3 +16,10 @@ menus:
     - name: Kontakt
       pageRef: /kontakt
       weight: 50
+
+[deployment]
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "production"
+# URL specifies the Go Cloud Development Kit URL to deploy to. Examples:
+URL = https://purple-sea-0a692d903.4.azurestaticapps.net/
