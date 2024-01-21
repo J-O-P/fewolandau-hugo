@@ -1,0 +1,17 @@
+{{ define "page" }} {{ range .Pages }}
+<div class="container">
+  <div class="row">
+    <h4 class="flow-text">{{ .Title }}</h4>
+    <p>{{ .Content }}</p>
+  </div>
+</div>
+{{ end }}
+
+<div class="container">
+  <h4 class="flow-text">Bildergalerie Landau und Umgebung</h4>
+  <p><i>Klick zum Vergrössern</i></p>
+
+  {{ partial "image-gallery" (dict "context" . "gallery_dir" "album-lage" ) }}
+</div>
+
+{{ end }}

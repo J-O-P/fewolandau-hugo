@@ -1,0 +1,14 @@
+{{ define "page" }} {{ range .Pages }}
+<div class="container">
+  <div class="row">
+    <h4 class="flow-text">{{ .Title }}</h4>
+    <p>{{ .Content }}</p>
+  </div>
+</div>
+{{ end }}
+
+<div class="container">
+  <a href="#" class="waves-effect waves-light btn">Online Buchung</a>
+</div>
+
+{{ end }}

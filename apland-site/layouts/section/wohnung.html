@@ -1,0 +1,35 @@
+{{ define "page" }}
+
+<div class="container">
+  <h4>Ausstattung Ferienwohnung Apland</h4>
+  <div class="row">
+    {{ range .Pages.ByParam "sortrank" }}
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ .Params.imgurl }}" />
+          <span class="card-title">{{ .Title }}</span>
+        </div>
+        <div class="card-content">{{ .Content }}</div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<div class="container">
+  <h4>Impressionen Ferienwohnung Apland</h4>
+  <p><i>Klick zum Vergrössern</i></p>
+
+  {{ partial "image-gallery" (dict "context" . "gallery_dir" "album-apt" ) }}
+</div>
+
+<div class="container">
+  <h4>Grundriss</h4>
+  <p><i>Klick zum Vergrössern</i></p>
+
+  {{ partial "image-gallery" (dict "context" . "gallery_dir" "album-grundriss" )
+  }}
+</div>
+
+{{ end }}

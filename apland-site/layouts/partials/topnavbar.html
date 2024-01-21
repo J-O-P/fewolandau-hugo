@@ -1,10 +1,10 @@
-<nav class="z-depth-0">
-  <div class="container nav-wrapper">
+<nav class="container nav-wrapper z-depth-0">
+
     <a href="/" class="brand-logo left">
       <img
-        src="/icons/menuicon_64_apland.png"
+        src="/icons/menuicon_apland.png"
         alt="Apland"
-        height="40px;"
+        height="60px;"
         style="vertical-align: middle"
       />
     </a>
@@ -21,10 +21,9 @@
         <a href="#" class="waves-effect waves-light btn">Online Buchung</a>
     </li>
     </ul>
-  </div>
 </nav>
 
-<ul class="sidenav" id="mobile-demo">
+<ul class="sidenav container" id="mobile-demo">
 {{ range site.Menus.main }}
 <li>
   <li><b><a href="{{ .URL }}">{{.Name}}</a></b></li>

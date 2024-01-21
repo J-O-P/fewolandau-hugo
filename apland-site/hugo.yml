@@ -5,14 +5,14 @@ pluralizelisttitles: false
 menus:
   main:
     - name: Wohnung
-      pageRef: /apt
+      pageRef: /wohnung
       weight: 20
     - name: Lage
-      pageRef: /location
+      pageRef: /lage
       weight: 30
     - name: Preis & Verfügbarkeit
-      pageRef: /book
+      pageRef: /preis
       weight: 40
     - name: Kontakt
-      pageRef: /contact
+      pageRef: /kontakt
       weight: 50
