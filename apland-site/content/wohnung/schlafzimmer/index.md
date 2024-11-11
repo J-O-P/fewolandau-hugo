@@ -2,8 +2,8 @@
 title: "Schlafzimmer"
 date: 2024-01-20T20:44:26+01:00
 draft: false
-imgurl: "/img/apt/503 Schlazfzimmer.JPG"
-sortrank: 400
+card_img_filemame: "503 Schlazfzimmer.JPG"
+weight: 400
 ---
 
 Schlafzimmer mit 160 cm x 200 cm Doppelbett.
