@@ -1,5 +1,5 @@
 ---
-title: "Modernes Badezimme mit Dusche"
+title: "Modernes Badezimmer mit Dusche"
 date: 2024-01-20T20:44:26+01:00
 draft: false
 card_img_filemame: "badpic.jpg"
