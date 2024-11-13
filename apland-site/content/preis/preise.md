@@ -5,7 +5,7 @@ draft: false
 weight: 50
 ---
 
-- Preis pro Nacht (bis 2 Personen) **ab EUR 95,-**
+- Preis pro Nacht (bis 2 Personen) **ab EUR 97,-**
 - Jede weitere Person EUR 10,- pro Nacht
 - Kinder unter 4 Jahren wohnen bei uns kostenlos.
 - Preis inclusive MwSt.
