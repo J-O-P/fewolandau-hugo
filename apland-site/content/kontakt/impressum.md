@@ -7,7 +7,7 @@ weight: 300
 
 **Angaben gem. § 5 TMG**  
 Ferienwohnung Apland  
-Inhaber: Barbara Petersen  
+Inhaberin: Barbara Petersen  
 Scheuerrain 5  
 3007 Bern  
 Schweiz
