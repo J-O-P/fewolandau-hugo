@@ -1,87 +1,91 @@
 {{ define "page" }}
 
 <div class="parallax-container">
-    <div class="no-pad-bot">
-        <br><br>
-        <div class="container">
-            <h3 class="header center white-text"><b>Ferienwohnung Apland</b></h3>
-            <div class="row center">
-                <h5 class="header col s12 white-text"><b>Ihre Ferienwohnung in der Stadtmitte von Landau/Pfalz</b>
-                </h5>
-            </div>
-            <br><br>
-
-        </div>
+  <div class="no-pad-bot">
+    <br /><br />
+    <div class="container">
+      <h3 class="header center white-text"><b>Ferienwohnung Apland</b></h3>
+      <div class="row center">
+        <h5 class="header col s12 white-text">
+          <b>Ihre Ferienwohnung in der Stadtmitte von Landau/Pfalz</b>
+        </h5>
+      </div>
+      <br /><br />
     </div>
-    <div class="parallax">
-        <img src="img/home/wozi2.jpg" alt="Wohnzimmer" class="responsive-img">
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row">
-        <br>
-
-        {{ range where .Site.RegularPages ".Params.cardsegment" 1 }}
-
-        <div class="col s12 m6 l3 hoverable">
-            <a href="#">
-                <div class="wide-container">
-                    <h5 class="center">
-                        {{ .Title}}
-                    </h5>
-                    <p>
-                        {{ .Content }}
-                    </p>
-                </div>
-            </a>
-        </div>
-
-        {{ end }}
-
-    </div>
-</div>
-
-<div class="parallax-container">
-    <div class="parallax">
-        <img src="img/home/esstisch.jpg" alt="Esstisch" class="responsive-img">
-    </div>
+  </div>
+  <div class="parallax">
+    {{ $homepic1 := .Resources.Get "home_wozi.jpg"}}
+    <img
+      src="{{ $homepic1.RelPermalink }}"
+      alt="Wohnzimmer"
+      class="responsive-img"
+    />
+  </div>
 </div>
 
 <div class="container">
-    <div class="row">
-        <br>
+  <div class="row">
+    <br />
 
-        {{ range where .Site.RegularPages ".Params.cardsegment" 2 }}
+    {{ range where .Site.RegularPages ".Params.cardsegment" 1 }}
 
-        <div class="col s12 m6 l3 hoverable">
-            <a href="#">
-                <div class="wide-container">
-                    <h5 class="center">
-                        {{ .Title}}
-                    </h5>
-                    <p>
-                        {{ .Content }}
-                    </p>
-                </div>
-            </a>
+    <div class="col s12 m6 l3 hoverable">
+      <a href="#">
+        <div class="wide-container">
+          <h5 class="center">{{ .Title}}</h5>
+          <p>{{ .Content }}</p>
         </div>
-
-        {{ end }}
-
-        <div class="col s12 m6 l3">
-            <br><br>
-            <a class="waves-effect waves-light btn">Online Buchung</a>
-        </div>
-
+      </a>
     </div>
+
+    {{ end }}
+  </div>
 </div>
 
 <div class="parallax-container">
-    <div class="parallax">
-        <img src="img/home/kueche.jpg" alt="Küche" class="responsive-img">
+  <div class="parallax">
+    {{ $homepic2 := .Resources.Get "home_esstisch.jpg"}}
+    <img
+      src="{{ $homepic2.RelPermalink }}"
+      alt="Wohnzimmer"
+      class="responsive-img"
+    />
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <br />
+
+    {{ range where .Site.RegularPages ".Params.cardsegment" 2 }}
+
+    <div class="col s12 m6 l3 hoverable">
+      <a href="#">
+        <div class="wide-container">
+          <h5 class="center">{{ .Title}}</h5>
+          <p>{{ .Content }}</p>
+        </div>
+      </a>
     </div>
+
+    {{ end }}
+
+    <div class="col s12 m6 l3">
+      <br /><br />
+      <a class="waves-effect waves-light btn">Online Buchung</a>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax">
+    {{ $homepic3 := .Resources.Get "home_kueche.jpg"}}
+    <img
+      src="{{ $homepic3.RelPermalink }}"
+      alt="Wohnzimmer"
+      class="responsive-img"
+    />
+  </div>
 </div>
 
 {{ end }}
