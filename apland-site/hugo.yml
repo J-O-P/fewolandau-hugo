@@ -4,6 +4,9 @@ title: FeWo Appland plain Hugo site
 pluralizelisttitles: false
 menus:
   main:
+    - name: Home
+      pageRef: /
+      weight: 1
     - name: Wohnung
       pageRef: /wohnung
       weight: 20
