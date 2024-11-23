@@ -18,6 +18,6 @@ weight: 50
 
 **An- und Abreise:**
 
-- **Anreise ab 16 Uhr** oder nach Vereinbarung und Verfügbarkeit
-- Wichtig: bitteBitte teilen Sie uns mindestens 3 Tage im Voraus Ihre voraussichtliche Ankunftszeit mit.
+- **Anreise ab 16 Uhr** (oder nach Vereinbarung und Verfügbarkeit)
+- Wichtig: Bitte teilen Sie uns mindestens 3 Tage im Voraus Ihre voraussichtliche Ankunftszeit mit.
 - **Abreise bis 11 Uhr** am Abreisetag (oder nach Vereinbarung und Verfügbarkeit).
