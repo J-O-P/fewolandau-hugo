@@ -35,26 +35,25 @@
 
 {{ $imgCollection := .context.Resources.Match (printf "%s/*" .gallery_dir) }}
 
+
 <ul class="image-gallery">
-  {{ range $imgCollection }} {{ if . }}
-
-  <li>
-    {{ $imagetitle := index (split .Name ".") 1 -}}
-    <a
-      href='{{ (.Fit "1600x1600 q50").Permalink }}'
-      title="{{ $imagetitle }}"
-      class="lightbox-image"
-    >
-      <img
-        src='{{ (.Fill " 300x300 q50").Permalink }}'
-        alt="{{ $imagetitle }}"
-        title="{{ $imagetitle }}"
-      />
-      <span>{{ $imagetitle }}</span>
-    </a>
-  </li>
-
-  {{ else }}
-  <p>No image loaded</p>
-  {{end}} {{ end }}
+  {{ range $imgCollection }}
+    {{ if . }}
+      <li>
+        {{ $imagetitle := index (split .Name ".") 1 -}}
+        <a
+          href="{{ (.Fit "1600x1600 q50").Permalink }}"
+          title="{{ $imagetitle }}"
+          class="lightbox-image">
+          <img
+            src="{{ (.Fill " 300x300 q50").Permalink }}"
+            alt="{{ $imagetitle }}"
+            title="{{ $imagetitle }}" />
+          <span>{{ $imagetitle }}</span>
+        </a>
+      </li>
+    {{ else }}
+      <p>No image loaded</p>
+    {{ end }}
+  {{ end }}
 </ul>
