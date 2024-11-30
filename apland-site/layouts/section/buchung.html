@@ -6,11 +6,11 @@
         <p>{{ .Content }}</p>
       </div>
     </div>
+
+    <div class="container">
+      <script
+        async
+        src="https://www.fewo-channelmanager.de/integration/v2/js/booking/21036"></script>
+    </div>
   {{ end }}
-
-
-  <div class="container">
-    <h4 class="flow-text">Bildergalerie Landau und Umgebung</h4>
-    {{ partial "image-gallery" (dict "context" . "gallery_dir" "gallery-lage" ) }}
-  </div>
 {{ end }}

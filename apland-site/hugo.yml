@@ -1,6 +1,6 @@
-baseURL: https://purple-sea-0a692d903.4.azurestaticapps.net/
+baseURL: https://www.fewolandau.de
 languageCode: en-us
-title: FeWo Appland plain Hugo site
+title: FeWo Apland in Landau/Pfalz
 pluralizelisttitles: false
 menus:
   main:
