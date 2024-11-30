@@ -1,0 +1,91 @@
+@media only screen and (max-width: 600px) {
+  .parallax-container {
+    height: 300px;
+  }
+}
+
+/* Include material-icons-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/material-icons-v142-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Make material-icons availabe*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Default icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+
+nav {
+  background-color: white;
+}
+
+.nav-wrapper {
+  color: black;
+  /* background-color: #E9E6E1; */
+}
+
+p {
+  color: black;
+}
+
+nav ul a {
+  color: black;
+}
+
+.page-footer {
+  padding-top: 20px;
+  color: black;
+  background-color: white;
+  /* background-color: #e0e0e0; */
+}
+
+.page-footer .footer-copyright {
+  padding: 10px 0px;
+  color: black;
+  background-color: white;
+}
+
+.wide-container {
+  .container;
+  width: 95%;
+}
+
+/* .xyxno-pad-bot {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* Hintergrund Logo 1    E9E6E1 */
+
+.flexbox {
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox .col {
+  flex: 1;
+  background: red;
+  margin: 10px;
+  padding: 20px;
+}
+
+body {
+  padding: 20px;
+}

@@ -1,45 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>
-      {{ or .Title .Site.Title }}{{ if ne .Kind "home" }} | {{
-      .CurrentSection.Title }}{{ end }}
+      {{ or .Title .Site.Title }}{{ if ne .Kind "home" }}
+        |
+        {{ .CurrentSection.Title }}
+      {{ end }}
     </title>
 
     <link
       rel="icon"
       type="image/x-icon"
-      href="/icons/favicon_96_96_apland.ico"
-    />
+      href="/icons/favicon_96_96_apland.ico" />
 
+    <!-- Materialize CSS -->
+    {{ $materializecss := resources.Get "css/materialize.css" | resources.Minify | resources.Fingerprint }}
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-    />
+      href="{{ $materializecss.Permalink }}"
+      integrity="{{ $materializecss.Data.Integrity }}" />
+
+    <!-- Own Website CSS -->
+    {{ $stylecss := resources.Get "css/style.css" | resources.Minify | resources.Fingerprint }}
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
-      type="text/css"
       rel="stylesheet"
-    />
-
-    <link href="/css/style.css" type="text/css" rel="stylesheet" />
-
-    <!-- <link rel="stylesheet" href=" $style.RelPermalink ">  -->
+      href="{{ $stylecss.Permalink }}"
+      integrity="{{ $stylecss.Data.Integrity }}" />
   </head>
 
   <body>
-    {{ partial "topnavbar" . }} {{ partial "header" . }} {{ block "page" . }}
-    <p>Error: Empty page block</p>
-    {{ end }} {{ partial "footer" . }}
+    {{ partial "topnavbar" . }}
+    {{ partial "header" . }}
+    {{ block "page" . }}
+      <p>Error: Empty page block</p>
+    {{ end }}
 
-    <!--  Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/js/site.js"></script>
+    {{ partial "footer" . }}
 
-    <script type="text/javascript" src="/js/lightbox.js"></script>
-    <link rel="stylesheet" href="/css/lightbox.css" />
+
+    <!--  Script Materialize JS -->
+    {{ $materializejs := resources.Get "js/materialize.js" | resources.Minify | resources.Fingerprint }}
+    <script
+      src="{{ $materializejs.Permalink }}"
+      integrity="{{ $materializejs.Data.Integrity }}"></script>
+
+    <!--  Script Lightbox JS -->
+    {{ $lightboxjs := resources.Get "js/lightbox.js" | resources.Minify | resources.Fingerprint }}
+    <script
+      src="{{ $lightboxjs.Permalink }}"
+      integrity="{{ $lightboxjs.Data.Integrity }}"></script>
+
+    <!--  Script Site for Parallax -->
+    {{ $sitejs := resources.Get "js/site.js" | resources.Minify | resources.Fingerprint }}
+    <script
+      src="{{ $sitejs.Permalink }}"
+      integrity="{{ $sitejs.Data.Integrity }}"></script>
+
+    <!-- Lighbox CSS -->
+    {{ $lightboxcss := resources.Get "css/lightbox.css" | resources.Minify | resources.Fingerprint }}
+    <link
+      rel="stylesheet"
+      href="{{ $lightboxcss.Permalink }}"
+      integrity="{{ $lightboxcss.Data.Integrity }}" />
   </body>
 </html>
