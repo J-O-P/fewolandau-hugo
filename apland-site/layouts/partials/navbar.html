@@ -1,0 +1,35 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">
+      <img
+        src="/icons/menuicon_apland.png"
+        alt="Apland"
+        height="48px"
+        style="vertical-align: middle; margin-left: 24px" />
+    </a>
+
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+      ><i class="material-icons">menu</i></a
+    >
+
+    <ul class="right hide-on-med-and-down">
+      {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+      <li>
+        {{ partial "buchung-button" . }}
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  {{ range site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+  {{ end }}
+
+
+  <li>
+    {{ partial "buchung-button" . }}
+  </li>
+</ul>

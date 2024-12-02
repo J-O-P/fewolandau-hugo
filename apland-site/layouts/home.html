@@ -1,91 +1,82 @@
 {{ define "page" }}
+  <!-- Erstes Bild mit Title OVerlay -->
+  <div class="parallax-container">
+    <!-- Overlay with Titles -->
+    <div class="no-pad-bot">
+      <h3 class="center white-text"><b>{{ .Title }}</b></h3>
+      <h5 class="center white-text"><b>{{ .Content | plainify }}</b></h5>
+    </div>
 
-<div class="parallax-container">
-  <div class="no-pad-bot">
-    <br /><br />
-    <div class="container">
-      <h3 class="header center white-text"><b>Ferienwohnung Apland</b></h3>
-      <div class="row center">
-        <h5 class="header col s12 white-text">
-          <b>Ihre Ferienwohnung in der Stadtmitte von Landau/Pfalz</b>
-        </h5>
+    <div class="parallax">
+      {{ $home_a := .Resources.Get "home_a.jpg" }}
+      <img
+        src="{{ ($home_a.Fit "1600x1600 q50").Permalink }}"
+        class="responsive-img" />
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="row">
+      {{ range where .Site.RegularPages ".Params.cardsegment" 1 }}
+        <div class="col s12 m6 l3">
+          <a href="{{ .Params.link_target }}">
+            <div class="card hoverable">
+              <div class="card-content">
+                <span class="card-title">{{ .Title }}</span>
+                {{ .Content }}
+              </div>
+            </div>
+          </a>
+        </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+  <!-- Zweites Bild -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      {{ $home_b := .Resources.Get "home_b.jpg" }}
+      <img
+        src="{{ ($home_b.Fit "1600x1600 q50").Permalink }}"
+        class="responsive-img" />
+    </div>
+  </div>
+
+  <div class="section white">
+    <div class="row">
+      {{ range where .Site.RegularPages ".Params.cardsegment" 2 }}
+        <div class="col s12 m6 l3 ">
+          <a href="{{ .Params.link_target }}">
+            <div class="card hoverable">
+              <div class="card-content">
+                <span class="card-title">{{ .Title }}</span>
+                {{ .Content }}
+              </div>
+            </div>
+          </a>
+        </div>
+      {{ end }}
+
+
+      <div class="col s12 m6 l3">
+        <div class="center-align">
+          <br />
+          <br />
+          {{ partial "buchung-button" . }}
+        </div>
       </div>
-      <br /><br />
     </div>
   </div>
-  <div class="parallax">
-    {{ $homepic1 := .Resources.Get "home_wozi.jpg"}}
-    <img
-      src="{{ $homepic1.RelPermalink }}"
-      alt="Wohnzimmer"
-      class="responsive-img"
-    />
-  </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <br />
-
-    {{ range where .Site.RegularPages ".Params.cardsegment" 1 }}
-
-    <div class="col s12 m6 l3 hoverable">
-      <a href="#">
-        <div class="wide-container">
-          <h5 class="center">{{ .Title}}</h5>
-          <p>{{ .Content }}</p>
-        </div>
-      </a>
-    </div>
-
-    {{ end }}
-  </div>
-</div>
-
-<div class="parallax-container">
-  <div class="parallax">
-    {{ $homepic2 := .Resources.Get "home_esstisch.jpg"}}
-    <img
-      src="{{ $homepic2.RelPermalink }}"
-      alt="Wohnzimmer"
-      class="responsive-img"
-    />
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <br />
-
-    {{ range where .Site.RegularPages ".Params.cardsegment" 2 }}
-
-    <div class="col s12 m6 l3 hoverable">
-      <a href="#">
-        <div class="wide-container">
-          <h5 class="center">{{ .Title}}</h5>
-          <p>{{ .Content }}</p>
-        </div>
-      </a>
-    </div>
-
-    {{ end }}
-
-    <div class="col s12 m6 l3">
-      <br /><br />
-      {{ partial "buchung-button" . }}
+  <!-- Drittes  Bild -->
+  <div class="parallax-container">
+    <div class="parallax">
+      {{ $home_c := .Resources.Get "home_b.jpg" }}
+      <img
+        src="{{ ($home_c.Fit "1600x1600 q50").Permalink }}"
+        class="responsive-img" />
     </div>
   </div>
-</div>
-
-<div class="parallax-container">
-  <div class="parallax">
-    {{ $homepic3 := .Resources.Get "home_kueche.jpg"}}
-    <img
-      src="{{ $homepic3.RelPermalink }}"
-      alt="Wohnzimmer"
-      class="responsive-img"
-    />
-  </div>
-</div>
-
 {{ end }}

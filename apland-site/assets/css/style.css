@@ -2,20 +2,19 @@
   .parallax-container {
     height: 300px;
   }
-}
-
+} /* See google-webfonts-helper website */
 /* Include material-icons-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/material-icons-v142-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/material-icons-v142-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* Make material-icons availabe*/
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px; /* Default icon size */
@@ -29,61 +28,71 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
-
-nav {
-  background-color: white;
-}
-
-.nav-wrapper {
-  color: black;
-  /* background-color: #E9E6E1; */
-}
-
+/* Default Text Color */
 p {
   color: black;
 }
 
+/* Top Navigation */
+nav {
+  /* background-color: lightpink; */
+  background-color: white;
+  box-shadow: none;
+}
+
 nav ul a {
   color: black;
+  font-weight: bold;
+}
+
+nav a {
+  color: black;
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  /* background-color: aquamarine; */
+  background-color: white;
+  padding-bottom: 24px;
+}
+
+/* Footer */
+footer {
+  /* background-color: yellow; */
 }
 
 .page-footer {
   padding-top: 20px;
-  color: black;
+  color: darkblue;
   background-color: white;
-  /* background-color: #e0e0e0; */
+  /* background-color: lightgreen; */
 }
 
 .page-footer .footer-copyright {
   padding: 10px 0px;
   color: black;
   background-color: white;
+  /* background-color: lightblue; */
+}
+/* Grid setup for cards */
+.row {
+  /*  display: flex; Make the row a flex container */
 }
 
-.wide-container {
-  .container;
-  width: 95%;
+.col {
+  justify-content: stretch; /* Ensure each column takes full height of the row */
 }
 
-/* .xyxno-pad-bot {
-    background-color: rgba(0, 0, 0, 0.1);
-} */
-
-/* Hintergrund Logo 1    E9E6E1 */
-
-.flexbox {
-  display: flex;
-  overflow: hidden;
+.card {
+  height: 100%; /* Ensure the card takes up the full height of the column */
 }
-
-.flexbox .col {
-  flex: 1;
-  background: red;
-  margin: 10px;
-  padding: 20px;
+/* Card Layout */
+.card-title {
+  font-weight: bold;
 }
 
 body {

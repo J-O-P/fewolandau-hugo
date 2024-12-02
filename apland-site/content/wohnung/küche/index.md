@@ -8,8 +8,8 @@ weight: 200
 
 Moderne Einbauküche, komplett ausgestattet mit:
 
-- Spülmaschine
-- 2 Platten Glaskeramik-Kochfeld
-- Kühlschrank mit Gefrierfach, sowie Toaster und Mikrowelle
-- Senseo-Kaffeemaschine und Wasserkocher (incl. Teebeuteln)
-- Reinigungsutensilien (Lappen, Spülmittel, Müllbeutel)
+Spülmaschine  
+2 Platten Glaskeramik-Kochfeld  
+Kühlschrank mit Gefrierfach, sowie Toaster und Mikrowelle  
+Senseo-Kaffeemaschine und Wasserkocher (incl. Teebeuteln)  
+Reinigungsutensilien (Lappen, Spülmittel, Müllbeutel)

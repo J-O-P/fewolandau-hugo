@@ -1,16 +1,15 @@
 {{ define "page" }}
   {{ range .Pages }}
     <div class="container">
-      <div class="row">
-        <h4 class="flow-text">{{ .Title }}</h4>
-        <p>{{ .Content }}</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <script
-        async
-        src="https://www.fewo-channelmanager.de/integration/v2/js/booking/21036"></script>
+      <h4>{{ .Title }}</h4>
+      <p>{{ .Content }}</p>
     </div>
   {{ end }}
+
+
+  <div class="container">
+    <script
+      async
+      src="https://www.fewo-channelmanager.de/integration/v2/js/booking/21036"></script>
+  </div>
 {{ end }}

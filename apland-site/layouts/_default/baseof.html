@@ -32,14 +32,18 @@
   </head>
 
   <body>
-    {{ partial "topnavbar" . }}
-    {{ partial "header" . }}
+    <header>
+      {{ partial "header" . }}
+    </header>
+
     {{ block "page" . }}
       <p>Error: Empty page block</p>
     {{ end }}
 
-    {{ partial "footer" . }}
 
+    <footer>
+      {{ partial "footer" . }}
+    </footer>
 
     <!--  Script Materialize JS -->
     {{ $materializejs := resources.Get "js/materialize.js" | resources.Minify | resources.Fingerprint }}
@@ -47,17 +51,17 @@
       src="{{ $materializejs.Permalink }}"
       integrity="{{ $materializejs.Data.Integrity }}"></script>
 
+    <!--  Script Site to initialize required MaterializeCSS features -->
+    {{ $sitejs := resources.Get "js/site.js" | resources.Minify | resources.Fingerprint }}
+    <script
+      src="{{ $sitejs.Permalink }}"
+      integrity="{{ $sitejs.Data.Integrity }}"></script>
+
     <!--  Script Lightbox JS -->
     {{ $lightboxjs := resources.Get "js/lightbox.js" | resources.Minify | resources.Fingerprint }}
     <script
       src="{{ $lightboxjs.Permalink }}"
       integrity="{{ $lightboxjs.Data.Integrity }}"></script>
-
-    <!--  Script Site for Parallax -->
-    {{ $sitejs := resources.Get "js/site.js" | resources.Minify | resources.Fingerprint }}
-    <script
-      src="{{ $sitejs.Permalink }}"
-      integrity="{{ $sitejs.Data.Integrity }}"></script>
 
     <!-- Lighbox CSS -->
     {{ $lightboxcss := resources.Get "css/lightbox.css" | resources.Minify | resources.Fingerprint }}
