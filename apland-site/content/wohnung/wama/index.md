@@ -6,5 +6,5 @@ card_img_filemame: "900 card_wama.jpg"
 weight: 600
 ---
 
-Im Bad in der Wohnung steht Ihnen eine Waschmaschine zur exclusiven Verfügung.
+Im Bad in der Wohnung stehen Ihnen  Waschmaschine und Trockner zur exclusiven Verfügung.
 Wir bitten, für die Nutzung der Waschmaschine einen Unkostenbeitrag von 4 EUR pro Waschgang zu hinterlassen.

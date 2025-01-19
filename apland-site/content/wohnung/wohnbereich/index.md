@@ -2,7 +2,7 @@
 title: "Offener Wohn-/Essbereich"
 date: 2024-01-20T20:44:26+01:00
 draft: false
-card_img_filemame: "900 card_offenerBereich.JPG"
+card_img_filemame: "Wohnzimmer.JPG"
 weight: 100
 ---
 

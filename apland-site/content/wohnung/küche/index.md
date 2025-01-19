@@ -2,7 +2,7 @@
 title: "Küche"
 date: 2024-01-20T20:44:26+01:00
 draft: false
-card_img_filemame: "210 Küche.JPG"
+card_img_filemame: "Kaffeemaschine.JPG"
 weight: 200
 ---
 
