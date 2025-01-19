@@ -7,4 +7,4 @@ cardsegment: 1
 link_target: "/wohnung"
 ---
 
-Ankommen in der Wohnung: Geschmackvolle Einrichtung, zentrale Lage, alles nötige vorhanden. Von Anfang an geniessen - Überzeugen Sie sich selbst.
+Ankommen in der Wohnung: Geschmackvolle Einrichtung, zentrale Lage, alles nötige vorhanden. Von Anfang an geniessen - Überzeugen Sie sich selbst. 

@@ -6,6 +6,6 @@ card_img_filemame: "badpic.jpg"
 weight: 500
 ---
 
-Badezimmer 3 mit viel Ablagefläche, flauschigen Handtüchern, erhöhtes WC, Kosmetikspiegel, Fön, Handseife, Hocker für Kinder. Durch die Fussbodenheizung in jeder Jahreszeit sehr angenehm.
+Badezimmer mit viel Ablagefläche, flauschigen Handtüchern, erhöhtes WC, Kosmetikspiegel, Fön, Handseife, Hocker für Kinder. Durch die Fussbodenheizung in jeder Jahreszeit sehr angenehm.
 
 Dazu eine flache, (fast) ebenerdige, leicht zugängliche Dusche.

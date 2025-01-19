@@ -2,7 +2,7 @@
 title: "Schlafzimmer"
 date: 2024-01-20T20:44:26+01:00
 draft: false
-card_img_filemame: "503 Schlazfzimmer.JPG"
+card_img_filemame: "Schlafzimmer 2.JPG"
 weight: 400
 ---
 
