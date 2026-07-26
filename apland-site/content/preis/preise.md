@@ -12,7 +12,7 @@ weight: 50
 
 **Bitte beachten Sie:**
 
-- Maximale Belegung: 3 Erwachsene oder 2 Erwachsene und 2 Kinder
+- Maximale Belegung: 2 Erwachsene oder 2 Erwachsene und 2 Kinder
 - Nichtraucherwohnung - Rauchen in der Wohnung nicht gestattet
 - Haustiere sind leider nicht gestattet
 
