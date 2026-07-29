@@ -4,7 +4,7 @@ date: 2024-01-20T20:44:26+01:00
 draft: false
 weight: 400
 cardsegment: 1
-link_target: "/buchung"
+link_target: "/preis/"
 ---
 
 Prüfen Sie hier auf der Homepage direkt online die Verfügbarkeit der Wohnung. 
