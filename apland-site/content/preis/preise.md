@@ -10,7 +10,7 @@ weight: 50
 - Kinder unter 4 Jahren wohnen bei uns kostenlos.
 - Preis inclusive MwSt.
 - Mindestaufenthalt: 4 Nächte
-- Anfragen an inf(at)fewolandau.de
+- Anfragen an info(at)fewolandau.de
 
 **Bitte beachten Sie:**
 
