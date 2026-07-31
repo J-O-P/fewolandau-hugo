@@ -9,6 +9,7 @@ weight: 50
 - Jede weitere Person EUR 10,- pro Nacht
 - Kinder unter 4 Jahren wohnen bei uns kostenlos.
 - Preis inclusive MwSt.
+- Mindestaufenthalt: 4 Nächte
 
 **Bitte beachten Sie:**
 
