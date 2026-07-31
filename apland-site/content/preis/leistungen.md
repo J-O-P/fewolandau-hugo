@@ -13,4 +13,4 @@ weight: 200
 - Alle Zimmer mit Fliessenboden
 - Allergiker-Bettdecken und -Kissen
 - Kinderstuhl und Kinderbett auf Anfrage
-- Waschmaschine gegen Gebühr (4 EUR pro Waschgang)
+- Waschmaschine und Tumbler gegen Gebühr (4 EUR pro Waschgang)
