@@ -6,4 +6,4 @@ card_img_filemame: "Wohnzimmer.JPG"
 weight: 100
 ---
 
-Moderne Holzmöbel, kombiniert mit Ledersofa und Récamiere bieten ein modernes und doch behagliches Wohngefühl. Esstisch mit Sitzgelegenheit für 4 Personen und bei Bedarf zusätzlich 2 Kinderstühlen. Das Ledersofa bietet eine weitere Schlafgelegenheit für maximal zwei Personen (1 Erwachsener, 2 Kinder).
+Moderne Holzmöbel, kombiniert mit Ledersofa und Récamiere bieten ein modernes und doch behagliches Wohngefühl. Esstisch mit Sitzgelegenheit für 4 Personen und bei Bedarf zusätzlich 2 Kinderstühlen. Das Ledersofa bietet eine weitere Schlafgelegenheit für maximal zwei 2 Kinder.
