@@ -7,7 +7,7 @@ weight: 100
 
 Für Anfragen/Kommentare können Sie uns wie folgt erreichen:
 
-**Barbara & Jens-Ole Petersen**  
+**Barbara Petersen**  
 Scheuerrain 5  
 CH 3007 Bern
 
