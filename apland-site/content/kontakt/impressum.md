@@ -12,7 +12,7 @@ Scheuerrain 5
 3007 Bern  
 Schweiz
 
-Inhaltlich Verantwortlicher / Webmaster: Jens-Ole Petersen  
+Inhaltlich Verantwortlicher / Webmaster: Barbara Petersen  
 Kontaktdaten s.o.
 
 Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE301801152
