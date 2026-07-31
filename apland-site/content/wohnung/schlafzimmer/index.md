@@ -10,4 +10,4 @@ Schlafzimmer mit 160 cm x 200 cm Doppelbett.
 
 Das Bett ist leicht höher für den bequemen Einstieg, zudem können Sie unter dem Bett auch ihre Koffer und Taschen verstauen. Dazu ein grosser Kleiderschrank. Die Rollläden an den Fenstern sorgen für eine erholsame Nachtruhe.
 
-Natürlich ausgestattet mit Allergiker-Bettdecken und -Kissen.
+Natürlich ausgestattet mit Allergiker-Bettdecken und -Kissen. Babybett auf Anfrage. 
